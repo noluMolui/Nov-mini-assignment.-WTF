@@ -1,0 +1,36 @@
+.floating-arrow {
+  position: fixed;
+  top: 100px;
+  right: 250px;
+  font-size: 45px;
+  color: #49DFB0;
+  cursor: pointer;
+
+  /* Initial tilt */
+  transform: rotate(-15deg);
+
+  /* Soft glow */
+  text-shadow: 0 0 4px #49DFB0,
+               0 0 8px #49DFB0;
+
+  /* Bounce + glow animations */
+  animation: arrowBounce 1.3s infinite ease-in-out,
+             arrowGlow 2s infinite ease-in-out;
+}
+
+/* Bounce animation: only vertical movement, keeps tilt */
+@keyframes arrowBounce {
+  0%   { transform: translateY(0) rotate(-15deg); }
+  60%  { transform: translateY(-8px) rotate(-15deg); }
+  100% { transform: translateY(0) rotate(-15deg); }
+}
+
+/* Glow animation: text-shadow pulsates */
+@keyframes arrowGlow {
+  0%, 100% {
+    text-shadow: 0 0 4px #49DFB0, 0 0 8px #49DFB0;
+  }
+  50% {
+    text-shadow: 0 0 8px #49DFB0, 0 0 16px #49DFB0;
+  }
+}
