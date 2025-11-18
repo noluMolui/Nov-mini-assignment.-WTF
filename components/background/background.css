@@ -1,36 +1,38 @@
+.auth-background {
+    position: fixed;
+    inset: 0;
+    background: #F9FAFB;
+    overflow: hidden;
+    z-index: -1;
+}
+
 .floating-arrow {
   position: fixed;
-  top: 100px;
-  right: 250px;
-  font-size: 45px;
+  top: 100px;          /* adjust up/down */
+  right: 250px;        /* adjust left/right */
+  font-size: 45px;     /* thicker + bigger */
   color: #49DFB0;
   cursor: pointer;
 
-  /* Initial tilt */
-  transform: rotate(-15deg);
+  /* Tilt slightly upward */
+  transform: rotate(-10deg);
 
-  /* Soft glow */
-  text-shadow: 0 0 4px #49DFB0,
-               0 0 8px #49DFB0;
+  /* Softer glow */
+  text-shadow: 0 0 4px #49DFB0 ,
+               0 0 8px #49DFB0 ;
 
-  /* Bounce + glow animations */
+  /* Bounce + soft glow */
   animation: arrowBounce 1.3s infinite ease-in-out,
              arrowGlow 2s infinite ease-in-out;
 }
 
-/* Bounce animation: only vertical movement, keeps tilt */
+/* Bounce (keeps the tilt) */
+.floating-arrow {
+  transform: rotate(-15deg);
+}
+
 @keyframes arrowBounce {
   0%   { transform: translateY(0) rotate(-15deg); }
   60%  { transform: translateY(-8px) rotate(-15deg); }
   100% { transform: translateY(0) rotate(-15deg); }
-}
-
-/* Glow animation: text-shadow pulsates */
-@keyframes arrowGlow {
-  0%, 100% {
-    text-shadow: 0 0 4px #49DFB0, 0 0 8px #49DFB0;
-  }
-  50% {
-    text-shadow: 0 0 8px #49DFB0, 0 0 16px #49DFB0;
-  }
 }
