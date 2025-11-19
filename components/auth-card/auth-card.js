@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Step 6: Decide which HTML file to load
         const filePath = tabType === "login"
-            ? "/components/login-form/login.html"
-            : "/components/signup-form/signup.html";
+            ? "/templates/login-form/login.html"
+            : "/templates/signup-form/signup.html";
 
         try {
             // Step 7: Fetch the HTML content of the selected form
