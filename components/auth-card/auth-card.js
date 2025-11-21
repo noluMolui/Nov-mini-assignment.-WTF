@@ -1,7 +1,7 @@
 // auth-card.js
 // This script handles switching between Login and Sign Up forms
 
-// Wait until the HTML content is fully loaded
+// Wait until the HTML content is fully loadeddocu
 document.addEventListener("DOMContentLoaded", () => {
 
     // Step 1: Listen for any click on the page
