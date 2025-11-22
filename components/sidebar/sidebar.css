@@ -1,8 +1,8 @@
 .sidebar {
-    width: 250px;
+    width: 13.125rem;
     height: 100vh;
-    border-right: 1px solid #eee;
-    padding: 20px 18px;
+    border-right: .0625rem solid #eee;
+    padding: 1.25rem 1.125rem;
     background: #fff;
     position: fixed;
     left: 0;
@@ -15,36 +15,28 @@
 .brand {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 18px;
+    gap: .625rem;
+    font-size: 17px;
+    border-bottom: rgb(223, 215, 215);
 }
 
-.brand-icon {
-    background: #4a6cf7;
-    color: #fff;
-    padding: 8px;
-    border-radius: 8px;
-    font-size: 16px;
-}
 
 /* Profile box */
 .profile-box {
-    background: #f8f9fc;
-    padding: 14px;
-    border-radius: 12px;
-    margin-bottom: 20px;
     display: flex;
-    gap: 12px;
+    gap: .75rem;
     align-items: center;
+}
+.profile-info{
+    font-size:  10px;
 }
 
 .avatar {
     background: #4a6cf7;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: 50%;
     color: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
@@ -54,19 +46,19 @@
 .menu {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    margin-bottom: 20px; /* tighter */
+    gap: .25rem;
+    margin-bottom: 1.25rem; /* tighter */
 }
 
 .menu-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 10px 12px;
-    border-radius: 8px;
+    gap: .75rem;
+    padding: .625rem .75rem;
+    border-radius: .5rem;
     cursor: pointer;
     color: #333;
-    font-size: 14px;
+    font-size: .875rem;
 }
 
 .menu-item.active,
@@ -77,12 +69,12 @@
 
 /* LOGOUT BUTTON — sits close to the menu */
 .logout {
-    margin-top: auto; /* pushes to bottom but not far */
-    padding: 10px 12px;
+   padding-top: 1.5625rem;
     border: none;
     background: transparent;
     color: #d9534f;
     cursor: pointer;
     text-align: left;
-    font-size: 14px;
+    font-size: .875rem;
+    border-top: solid .0125rem rgb(241, 236, 236);
 }
