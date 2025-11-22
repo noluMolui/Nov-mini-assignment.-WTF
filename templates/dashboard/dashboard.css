@@ -1,0 +1,92 @@
+body {
+    background: #fafbff;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.main-area {
+    margin-left: 260px;
+    padding: 20px;
+}
+
+/* Top statistics cards */
+.cards-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.card .icon {
+    background: #eef2ff;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin: 5px 0;
+}
+
+/* main sections */
+.main-sections {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Recent tasks */
+.recent, .quick-actions {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px;
+    background: #f9fafb;
+    border-radius: 10px;
+}
+
+.circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid #4a6cf7;
+}
+
+.tag {
+    background: #ffe7a0;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-left: auto;
+}
+
+/* Quick actions */
+.qa-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    background: #f9fafb;
+}
+
+.qa-icon {
+    background: #eef2ff;
+    padding: 8px;
+    border-radius: 8px;
+}

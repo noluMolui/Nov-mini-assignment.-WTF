@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>TaskMaster | Auth</title>
- 
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
 
+    <link rel="stylesheet" href="/templates/dashboard/dashboard.css">
+</head>
 <body>
 
-  <div data-import="/components/background/background.html"></div>
+    <!-- Sidebar -->
+    <div data-import="/components/sidebar/sidebar.html"></div>
 
-  <main data-import="/components/auth-card/auth-card.html"></main>
+    <!-- Main content area -->
+    <main class="main-area">
+        <div data-import="/components/topbar/topbar.html"></div>
 
-  
+        <div data-import="/templates/dashboard/dashboard.html"></div>
+    </main>
 
-  <script src="/global.js"></script>
-<script src="/components/auth-card/auth-card.js"></script>
-
+    <script src="/global.js"></script>
 </body>
 </html>
+

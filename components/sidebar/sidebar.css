@@ -1,0 +1,88 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    border-right: 1px solid #eee;
+    padding: 20px 18px;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Brand (top) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.brand-icon {
+    background: #4a6cf7;
+    color: #fff;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Profile box */
+.profile-box {
+    background: #f8f9fc;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.avatar {
+    background: #4a6cf7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 20px; /* tighter */
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+}
+
+.menu-item.active,
+.menu-item:hover {
+    background: #eef2ff;
+    color: #4a6cf7;
+}
+
+/* LOGOUT BUTTON — sits close to the menu */
+.logout {
+    margin-top: auto; /* pushes to bottom but not far */
+    padding: 10px 12px;
+    border: none;
+    background: transparent;
+    color: #d9534f;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+}
