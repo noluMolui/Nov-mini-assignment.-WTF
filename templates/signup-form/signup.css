@@ -55,16 +55,22 @@
     border-radius: 10px;
     border: 1px solid #E5E7EB;
     background: white;
+    cursor: pointer;
 }
 
 .create {
-    flex: 1;
-    margin-left: 10px;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    background: #FACC15;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
-}
-
-
+    text-decoration: none;
+  display: inline-flex;              
+  align-items: center;              
+  justify-content: center;          
+  gap: 0.5rem;                    
+  white-space: nowrap;               
+  font-size: 0.875rem;             
+  font-weight: 600;                  
+  color: #111827;               
+  padding: 0.5rem 1rem;           
+  flex: 1;                   
+  border-radius: 0.75rem;           
+  background: linear-gradient(to right, #facc15, #f59e0b); 
+  box-shadow: 0 4px 12px rgba(250, 204, 21, 0.3);        
+  cursor: pointer;}

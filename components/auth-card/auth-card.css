@@ -1,8 +1,8 @@
 body {
     display: flex;
-    justify-content: center; /* centers horizontally */
-    align-items: center;     /* centers vertically */
-    margin: 0;               /* remove default margin */
+    justify-content: center;
+    align-items: center;     
+    margin: 0;               
     background: #f0f0f0;  
     font-family:"Bona Nova", serif;
 
@@ -37,7 +37,6 @@ body {
     margin-bottom: 25px;
 }
 
-/* Tabs */
 .tabs {
     display: flex;
     background: #F3F4F6;
