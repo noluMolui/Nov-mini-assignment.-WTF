@@ -11,70 +11,103 @@
     flex-direction: column;
 }
 
-/* Brand (top) */
-.brand {
-    display: flex;
-    align-items: center;
-    gap: .625rem;
-    font-size: 17px;
-    border-bottom: rgb(223, 215, 215);
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #dfd7d7;
+  background-color: #fff;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 
-/* Profile box */
-.profile-box {
-    display: flex;
-    gap: .75rem;
-    align-items: center;
+
+
+.brand-info{
+  display: flex;
+  align-items: center;
+  gap: 0.29rem;
 }
-.profile-info{
-    font-size:  10px;
+
+#user-info{padding: 10px;
+border-top: 0.5px solid whitesmoke;
+border-bottom: 0.5px solid whitesmoke;
+gap: 10px;
 }
+
+.brand h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
 
 .avatar {
-    background: #4a6cf7;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; 
+  background: linear-gradient(to bottom right, #2563eb, #4f46e5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  flex-shrink: 0;
+  font-size: 1rem;
 }
 
-/* MENU */
+
+
+.profile-info .name {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.profile-info .email {
+  font-size: 0.75rem;
+  color: #666;
+  margin: 0;
+}
+
+
 .menu {
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: .25rem;
-    margin-bottom: 1.25rem; /* tighter */
+    gap: 4px;
+    margin-bottom: 20px;
 }
 
 .menu-item {
     display: flex;
     align-items: center;
-    gap: .75rem;
-    padding: .625rem .75rem;
-    border-radius: .5rem;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius:8px;
     cursor: pointer;
     color: #333;
     font-size: .875rem;
 }
 
-.menu-item.active,
+
 .menu-item:hover {
     background: #eef2ff;
     color: #4a6cf7;
 }
 
-/* LOGOUT BUTTON — sits close to the menu */
 .logout {
-   padding-top: 1.5625rem;
+   margin-top: 90px;
+   padding: 15px;
     border: none;
+     border-top: 1px solid #dfd7d7;
     background: transparent;
     color: #d9534f;
     cursor: pointer;
     text-align: left;
     font-size: .875rem;
-    border-top: solid .0125rem rgb(241, 236, 236);
 }

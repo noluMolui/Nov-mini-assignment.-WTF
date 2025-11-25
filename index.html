@@ -3,23 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-
-    <link rel="stylesheet" href="/templates/dashboard/dashboard.css">
+    <title>Auth</title>
 </head>
 <body>
+    <div data-import="/components/background/background.html"></div>
 
-    <!-- Sidebar -->
-    <div data-import="/components/sidebar/sidebar.html"></div>
+    <div data-import="/components/auth-card/auth-card.html"></div>
+    
+    
 
-    <!-- Main content area -->
-    <main class="main-area">
-        <div data-import="/components/topbar/topbar.html"></div>
+   <script src="/global.js"></script>
+<script src="/components/auth-card/auth-card.js" defer></script>
 
-        <div data-import="/templates/dashboard/dashboard.html"></div>
-    </main>
-
-    <script src="/global.js"></script>
 </body>
 </html>
 
