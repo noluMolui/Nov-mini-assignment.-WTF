@@ -1,18 +1,27 @@
-async function loadComponents(root = document) {
-    const zones = root.querySelectorAll("[data-import]");
+document.addEventListener("click", (e) => {
+    const item = e.target.closest("[data-page]");
+    if (!item) return;
 
-    for (const zone of zones) {
-        const file = zone.getAttribute("data-import");
+    const page = item.dataset.page;
 
-        const html = await fetch(file).then(r => r.text());
-        zone.innerHTML = html;
+    // Build file path: /templates/{page}/{page}.html
+    const filePath = `/templates/${page}/${page}.html`;
 
-        
-        await loadComponents(zone);
-    }
-}
+    // Find main content area
+    const mainContent = document.querySelector(".main-content");
 
-document.addEventListener("DOMContentLoaded", () => {
-    loadComponents();
+    // Update the data-import attribute
+    mainContent.setAttribute("data-import", filePath);
+
+    // Reload the component
+    loadComponents(mainContent);
+
+    // Optional: highlight active sidebar item
+    document
+        .querySelectorAll(".sidebar-menu li")
+        .forEach(li => li.classList.remove("active"));
+
+    item.classList.add("active");
 });
+
 
