@@ -1,37 +1,36 @@
 <link rel="stylesheet" href="/templates/tasks/task.css">
-  <div class="task-card">
-    <div class="task-header">
-      <div class="icon">📝</div>
-      <div>
-        <div class="title">Task Management</div>
-        <div class="subtitle">Manage and track your tasks</div>
-      </div>
-    </div>
+<div class="task-page">
+  <div class="task-tabs">
+  <div class="tab-group">
+    <button class="tab active">My Tasks</button>
+    <button class="tab">AI Summary</button>
+  </div>
+</div>
 
-    <div class="tabs">
-      <div class="tab active" onclick="switchTab('tasks')">My Tasks</div>
-      <div class="tab" onclick="switchTab('ai')">AI Summary</div>
-    </div>
 
-    <div class="task-stats" id="taskStats">
-      <div>0 <span>Active tasks</span></div>
-      <div>0 <span>Completed</span></div>
-    </div>
+  <div class="task-tabs">
+    <button class="tab active">My Tasks</button>
+    <button class="tab">AI Summary</button>
+  </div>
 
-    <div class="tab-content" id="tabContent">
-      <div id="tasksContent">
-        <p>No tasks yet</p>
-        <small>Click "Add Task" to create your first task</small>
-      </div>
-      <div id="aiContent" style="display:none;">
-        <!-- AI Summary content goes here -->
-      </div>
+  <div class="task-stats">
+    <div class="stat">
+      <div class="stat-number">0</div>
+      <div class="stat-label">Active tasks</div>
     </div>
-
+    <div class="stat">
+      <div class="stat-number">0</div>
+      <div class="stat-label">Completed</div>
+    </div>
     <button class="add-task-btn">+ Add Task</button>
   </div>
-<script src="/templates/tasks/"></script>
-  
+
+  <div class="task-empty">
+    <p class="empty-title">No tasks yet</p>
+    <p class="empty-subtext">Click "Add Task" to create your first task</p>
+  </div>
+</div>
+
 
 
 

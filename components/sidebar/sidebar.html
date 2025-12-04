@@ -1,61 +1,49 @@
 <link rel="stylesheet" href="/components/sidebar/sidebar.css">
 
-<aside class="sidebar">
-
-
-  <div class="brand-info">
-    <img src="/assets/images/task.png" alt="task-images" width="35px">
-    <h2>TaskMaster</h2>
-  </div>
-
-  <div class="brand-info" id="user-info">
-    <div class="avatar">N</div>
-    <div class="profile-info">
-      <p class="name">NoluthandoMolui</p>
-      <p class="email">noluthandotinyiko@gmail.com</p>
+<div class="app-layout">
+  <aside class="sidebar">
+    <div class="brand-info">
+      <img src="/assets/images/task.png" alt="task-images" width="35px">
+      <h2>TaskMaster</h2>
     </div>
-  </div>
 
-
-        
+    <div class="brand-info" id="user-info">
+      <div class="avatar">N</div>
+      <div class="profile-info">
+        <p class="name">NoluthandoMolui</p>
+        <p class="email">noluthandotinyiko@gmail.com</p>
+      </div>
     </div>
 
     <nav class="menu">
-        <a class="menu-item active"><img src="/assets/images/dashboard.png" alt="dashboard-image" width="15px">Dashboard</a>
-        <a class="menu-item"><img src="/assets/images/clipboard.png" alt="tasks-image" width="15px"> Tasks</a>
-        <a class="menu-item"><img src="/assets/images/couple.png" alt="comm-images" width="15px" data-page="community">Community</a>
-        <a class="menu-item"><img src="assets//images/dollar.png" alt="dollar-image" width="15px" >Expenses</a>
-        <a class="menu-item"><img src="/assets/images/document.png" alt="nots-image" width="15px"> Notes</a>
-        <a class="menu-item"><img src="assets/images/settings.png" alt="settings image" width="15px">Settings</a>
-    </nav>
-    <a class="menu-item active" data-page="/templates/dashboard/dashboard.html">
+      <a class="menu-item active" data-page="dashboard">
         <img src="/assets/images/dashboard.png" width="15px"> Dashboard
-    </a>
-
-    <a class="menu-item" data-page="/templates/tasks/tasks.html">
+      </a>
+      <a class="menu-item" data-page="tasks">
         <img src="/assets/images/clipboard.png" width="15px"> Tasks
-    </a>
-
-    <a class="menu-item" data-page="/templates/community/community.html">
+      </a>
+      <a class="menu-item" data-page="community">
         <img src="/assets/images/couple.png" width="15px"> Community
-    </a>
-
-    <a class="menu-item" data-page="/templates/expenses/expenses.html">
+      </a>
+      <a class="menu-item" data-page="expenses">
         <img src="/assets/images/dollar.png" width="15px"> Expenses
-    </a>
-
-    <a class="menu-item" data-page="/templates/notes/notes.html">
+      </a>
+      <a class="menu-item" data-page="notes">
         <img src="/assets/images/document.png" width="15px"> Notes
-    </a>
-
-    <a class="menu-item" data-page="/templates/settings/settings.html">
+      </a>
+      <a class="menu-item" data-page="settings">
         <img src="/assets/images/settings.png" width="15px"> Settings
-    </a>
-</nav>
+      </a>
+    </nav>
 
+    <a href="index.html" class="logout">
+  <img src="/assets/images/logout.png" width="15px" alt="Logout icon">
+  Logout
+</a>
 
+  </aside>
 
-<button class="logout"><img src="logout.png" alt="logout-images" width="15px">Logout</button>
+  <!-- Main content must be inside app-layout -->
+  <main id="main-content"></main>
+</div>
 
-</aside>
-<script src="/components/sidebar/sidebar.js"></script>

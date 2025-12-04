@@ -1,14 +1,35 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      margin: 0;
+      padding: 60px;
+    }
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+
 .sidebar {
-    width: 13.125rem;
-    height: 100vh;
-    border-right: .0625rem solid #eee;
-    padding: 1.25rem 1.125rem;
-    background: #fff;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    flex-direction: column;
+  position: fixed;       
+  top: 0;
+  left: 0;
+  width: 250px;          
+  height: 100vh;        
+  background: white;
+  color: white;
+  padding: 20px;
+  overflow-y: auto;     
+}
+
+
+#main-content {
+  margin-left: 250px;    
+  flex: 1;
+  padding: 24px;
+  background: #f9fafb;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 
@@ -29,6 +50,7 @@
   display: flex;
   align-items: center;
   gap: 0.29rem;
+  color: #333;
 }
 
 #user-info{padding: 10px;

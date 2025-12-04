@@ -1,0 +1,119 @@
+.task-page {
+  font-family: var(--font-body, Arial, sans-serif);
+  padding: 24px;
+  color: #1f2937; 
+  background: #f9fafb; 
+}
+
+/* Header */
+.task-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.task-header p {
+  font-size: 14px;
+  color: #6b7280; 
+  margin-top: 4px;
+}
+
+
+.task-tabs {
+  margin-top: 20px;
+}
+
+.tab-group {
+  display: flex;
+  border: 1px solid #d1d5db; 
+  border-radius: 8px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+
+.tab {
+  padding: 8px 16px;
+  background: #f3f4f6; 
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151; 
+  cursor: pointer;
+  transition: background 0.2s ease;
+  flex: 1;
+}
+
+.tab:not(:last-child) {
+  border-right: 1px solid #d1d5db;
+}
+
+.tab.active {
+  background: #1d4ed8; 
+  color: white;
+}
+
+
+.task-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-number {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+
+.add-task-btn {
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-task-btn:hover {
+  background: #1e40af; 
+}
+
+
+.task-empty {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.empty-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.empty-subtext {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+
