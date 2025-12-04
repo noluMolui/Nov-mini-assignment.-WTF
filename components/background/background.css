@@ -8,25 +8,25 @@
 
 .floating-arrow {
   position: fixed;
-  top: 100px;          /* adjust up/down */
-  right: 250px;        /* adjust left/right */
-  font-size: 45px;     /* thicker + bigger */
+  top: 100px;          
+  right: 250px;        
+  font-size: 45px;    
   color: #49DFB0;
   cursor: pointer;
 
-  /* Tilt slightly upward */
+  
   transform: rotate(-10deg);
 
-  /* Softer glow */
+ 
   text-shadow: 0 0 4px #49DFB0 ,
                0 0 8px #49DFB0 ;
 
-  /* Bounce + soft glow */
+ 
   animation: arrowBounce 1.3s infinite ease-in-out,
              arrowGlow 2s infinite ease-in-out;
 }
 
-/* Bounce (keeps the tilt) */
+
 .floating-arrow {
   transform: rotate(-15deg);
 }
