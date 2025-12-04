@@ -1,0 +1,70 @@
+.community-page {
+    padding: 20px;
+}
+
+.community-container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 20px;
+}
+
+.info-block {
+    display: flex;
+    background: white;
+    padding: 12px;
+    border-radius: 12px;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.info-block h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.info-block p {
+    margin: 0;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.small-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.big-card {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.big-card h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.big-card p {
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.big-img {
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 12px;
+}
+
+.join-btn {
+    background: #4A74F5;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
